@@ -44,7 +44,7 @@ export default function Example() {
               </button>
             </div>
             <p className="mt-4 text-sm leading-6 text-gray-900">
-              Get more details and access to our DEX once it's ready.
+              Get more details and access to our DEX once it&apos;s ready.
               {/* <a
               href="#"
               className="font-semibold text-sky-600 hover:text-sky-500"

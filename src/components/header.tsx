@@ -1,10 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
-
 const navigation = [
   { name: "About", href: "about" },
   { name: "Community", href: "community" },
@@ -12,8 +7,6 @@ const navigation = [
 ];
 
 export default function Header() {
-  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   const scrolltoHash = function (element_id: string) {
     const element = document.getElementById(element_id);
     element?.scrollIntoView({

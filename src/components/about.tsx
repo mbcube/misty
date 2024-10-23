@@ -1,10 +1,5 @@
 import { FadeIn } from "@/faderIn";
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  LockClosedIcon,
-} from "@heroicons/react/20/solid";
-import {
   DocumentCurrencyDollarIcon,
   GiftIcon,
   UserGroupIcon,
