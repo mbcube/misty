@@ -4,6 +4,8 @@ import {
   GiftIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const features = [
   {
@@ -31,51 +33,82 @@ const features = [
 
 export default function About() {
   return (
-    <FadeIn id="about">
-      <div className="bg-sky-100 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-sky-400">
-              Welcome to the world of Misty where
-            </h2>
-            <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-700 sm:text-5xl lg:text-balance">
-              Creativity meets the future of digital collectibles
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-700">
-              Misty brings you into a vibrant aquatic universe where digital
-              collectibles meet community-driven experiences. Join us as we
-              redefine creativity in the NFT space with rare, interactive
-              companions.
-            </p>
-          </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              {features.map((feature) => (
-                <div key={feature.name} className="flex flex-col">
-                  <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-700">
-                    <feature.icon
-                      aria-hidden="true"
-                      className="h-5 w-5 flex-none text-sky-400"
-                    />
-                    {feature.name}
-                  </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-700">
-                    <p className="flex-auto">{feature.description}</p>
-                    <p className="mt-6">
-                      {/* <a
-                      href={feature.href}
-                      className="text-sm font-semibold leading-6 text-sky-400"
-                    >
-                      Learn more <span aria-hidden="true">→</span>
-                    </a> */}
-                    </p>
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
+    // <FadeIn id="about">
+    //   <div className="bg-sky-100 py-24 sm:py-32">
+    //     <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    //       <div className="mx-auto max-w-2xl lg:text-center">
+    //         <h2 className="text-base font-semibold leading-7 text-sky-400">
+    //           Welcome to the world of Misty where
+    //         </h2>
+    //         <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-700 sm:text-5xl lg:text-balance">
+    //           Creativity meets the future of digital collectibles
+    //         </p>
+    //         <p className="mt-6 text-lg leading-8 text-gray-700">
+    //           Misty brings you into a vibrant aquatic universe where digital
+    //           collectibles meet community-driven experiences. Join us as we
+    //           redefine creativity in the NFT space with rare, interactive
+    //           companions.
+    //         </p>
+    //       </div>
+    //       <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+    //         <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+    //           {features.map((feature) => (
+    //             <div key={feature.name} className="flex flex-col">
+    //               <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-700">
+    //                 <feature.icon
+    //                   aria-hidden="true"
+    //                   className="h-5 w-5 flex-none text-sky-400"
+    //                 />
+    //                 {feature.name}
+    //               </dt>
+    //               <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-700">
+    //                 <p className="flex-auto">{feature.description}</p>
+    //                 <p className="mt-6">
+    //                   {/* <a
+    //                   href={feature.href}
+    //                   className="text-sm font-semibold leading-6 text-sky-400"
+    //                 >
+    //                   Learn more <span aria-hidden="true">→</span>
+    //                 </a> */}
+    //                 </p>
+    //               </dd>
+    //             </div>
+    //           ))}
+    //         </dl>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </FadeIn>
+    <motion.div className="relative isolate overflow-hidden w-screen ">
+      <div
+        id="community"
+        className="bg-white/60 h-full grid grid-cols-1 sm:grid-cols-2 "
+      >
+        <div className="flex items-center justify-center py-10 sm:py-20 px-10 sm:px-0">
+          <Image
+            width={1280}
+            height={1280}
+            alt=""
+            src="/img/misty-portal.jpeg"
+            className=" opacity-90 rounded-full w-[24rem] sm:w-[36rem] "
+          />
+        </div>
+        <div className="flex items-center justify-center p-10 sm:p-0 ">
+          <FadeIn>
+            <div className="mx-auto max-w-2xl text-left">
+              <h2 className="mt-2 text-5xl font-semibold tracking-tight text-gray-950 sm:text-7xl">
+                Warp In
+              </h2>
+              <p className="mt-8 text-pretty text-lg text-gray-950 sm:text-3xl">
+                Join an elite group of early adopters who receive special perks,
+                including access to limited edition drops, insider updates, and
+                voting power on key decisions that shape the future of the Misty
+                universe.
+              </p>
+            </div>
+          </FadeIn>
         </div>
       </div>
-    </FadeIn>
+    </motion.div>
   );
 }

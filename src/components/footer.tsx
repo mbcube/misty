@@ -24,8 +24,8 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-sm leading-5 ">
-            &copy; 2024 The Misty Project. All rights reserved.
+          <p className="text-center text-2xl leading-5 ">
+            Bloop Bloop Bloop &copy; 2024 Misty.
           </p>
         </div>
       </div>
