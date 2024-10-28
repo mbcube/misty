@@ -13,7 +13,7 @@ export default function Dex() {
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center flex items-center justify-center ">
             <h2 className="text-balance text-5xl font-semibold tracking-tight text-sky-900 sm:text-7xl bg-sky-50/50 py-2 px-3">
-              SUI
+              $MISTY
             </h2>
           </div>
           <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-5 bg-sky-50/90">

@@ -16,13 +16,15 @@ export default function Ca() {
             Community Access
           </p> */}
               <h2 className="mt-2 text-5xl font-semibold tracking-tight text-gray-950 sm:text-7xl">
-                Exclusive Access!
+                The Journey begins
               </h2>
               <p className="mt-8 text-pretty text-lg text-gray-950 sm:text-3xl">
-                Join an elite group of early adopters who receive special perks,
+                {/* Join an elite group of early adopters who receive special perks,
                 including access to limited edition drops, insider updates, and
                 voting power on key decisions that shape the future of the Misty
-                universe.
+                universe. */}
+                We&apos;re thrilled to have you with us as we kick off the
+                $MISTY journey
                 {/* This isn’t just about
         owning a digital collectible—it’s about being part of a community
         that thrives on collaboration and creativity. Join us to unlock a

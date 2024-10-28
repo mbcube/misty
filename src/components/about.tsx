@@ -22,13 +22,11 @@ export default function About() {
           <FadeIn>
             <div className="mx-auto max-w-2xl text-left">
               <h2 className="mt-2 text-5xl font-semibold tracking-tight text-gray-950 sm:text-7xl">
-                Warp In
+                $SUI
               </h2>
               <p className="mt-8 text-pretty text-lg text-gray-950 sm:text-3xl">
-                Join an elite group of early adopters who receive special perks,
-                including access to limited edition drops, insider updates, and
-                voting power on key decisions that shape the future of the Misty
-                universe.
+                $MISTY is introducing a new and exciting element to the $SUI
+                ecosystem, enhancing its value and appeal.
               </p>
             </div>
           </FadeIn>
