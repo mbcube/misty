@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jersey.variable} antialiased bg-[url('/img/ocean.jpg')] bg-repeat `}
+        className={`${jersey.variable} antialiased bg-[url('/img/bg-teal.jpg')] bg-repeat  `}
       >
         <div className="bg-sky-50/40  relative isolate overflow-hidden ">
           <div

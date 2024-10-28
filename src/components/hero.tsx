@@ -15,7 +15,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="mx-auto h-screen flex flex-col items-center justify-center">
+    <div className="mx-auto h-screen flex flex-col items-center justify-center min-h-[35rem]">
       <div className="relative w-[40rem] h-[20rem] flex items-center justify-center">
         <motion.div
           className="absolute"
