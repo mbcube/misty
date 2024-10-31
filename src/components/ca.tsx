@@ -12,9 +12,6 @@ export default function Ca() {
         <div className="flex items-center justify-center  py-10 sm:py-20 px-10 sm:px-0">
           <FadeIn>
             <div className="mx-auto max-w-2xl text-left">
-              {/* <p className="text-base font-semibold leading-7 text-sky-600">
-            Community Access
-          </p> */}
               <h2 className="mt-2 text-5xl font-semibold tracking-tight text-gray-950 sm:text-7xl">
                 The Journey begins
               </h2>
