@@ -12,6 +12,21 @@ const jersey = localFont({
 export const metadata: Metadata = {
   title: "Misty",
   description: "The Misty Project",
+  openGraph: {
+    locale: "en_US",
+    type: "website",
+    title: "Misty",
+    description: "The Misty Project",
+    url: process.env.APP_PATH,
+    siteName: "Misty",
+    images: [
+      {
+        width: 655,
+        height: 336,
+        url: `${process.env.APP_PATH}/img/banner-2x-2-1.webp`,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
