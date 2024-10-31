@@ -4,7 +4,7 @@ export default function Dex() {
     { id: 2, name: "Exchange", value: "5%" },
     { id: 3, name: "Airdrop", value: "6%" },
     { id: 4, name: "Marketing", value: "6%" },
-    { id: 5, name: "Community", value: "78%" },
+    { id: 5, name: "Community", value: "77%" },
   ];
 
   return (
